@@ -9,11 +9,13 @@ const Details = ({ type, time, place, info }) => {
         whileInView={{ y: 0 }}
         transition={{ duration: 1, type: "spring" }}
       >
-        <h3 className="capitalize font-bold text-2xl md:text-xl xs:text-lg ">{type}</h3>
-        <span className="capitalize font-medium text-dark/75 dark:text-light/75 xs:text-sm">
+        <h3 className="capitalize font-bold text-2xl md:text-xl xs:text-[24px] text-primary dark:text-primaryDark">
+          {type}
+        </h3>
+        <span className="capitalize font-medium text-primary/80 dark:text-primaryDark/80 xs:text-sm ">
           {time} | {place}
         </span>
-        <p className="font-medium w-full md:text-sm ">{info}</p>
+        <p className="font-medium w-full md:text-md ">{info}</p>
       </motion.div>
     </li>
   );
@@ -28,11 +30,14 @@ const Education = () => {
 
   return (
     <div className="my-48">
-      <h2 className="font-bold text-6xl mb-28 w-full text-center md:text-5xl xs:text-5xl md:mb-16 ">
+      <h2 className="font-bold text-6xl mb-28 w-full text-center md:text-5xl xs:text-5xl md:mb-16 text-primary dark:text-primaryDark">
         Education
       </h2>
 
-      <div ref={ref} className="w-[75%] mx-auto relative lg:w-[90%] md:w-[93%] ">
+      <div
+        ref={ref}
+        className="w-[75%] mx-auto relative lg:w-[90%] md:w-[93%] "
+      >
         <motion.div
           style={{ scaleY: scrollYProgress }}
           className="absolute -left-10 top-0 w-[4px] h-full bg-dark origin-top dark:bg-light md:w-[2px] xs:-left-[25px] "

@@ -14,7 +14,7 @@ const Details = ({ position, company, companyLink, time, address, work }) => {
           <a
             href={companyLink}
             target="_blank"
-            className="capitalize text-primary dark:text-primaryDark"
+            className="capitalize text-blue-400"
           >
             @{company}
           </a>
@@ -37,7 +37,7 @@ const Experience = () => {
 
   return (
     <div className="my-48">
-      <h2 className="font-bold text-6xl mb-28 w-full text-center md:text-5xl xs:text-5xl md:mb-16 ">
+      <h2 className="font-bold text-6xl mb-28 w-full text-center md:text-5xl xs:text-5xl md:mb-16 text-primary dark:text-primaryDark">
         Experience
       </h2>
 

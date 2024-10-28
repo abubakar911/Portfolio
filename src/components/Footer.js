@@ -15,7 +15,10 @@ const Footer = () => {
         <span> {new Date().getFullYear()} &copy; All Rights Reserved. </span>
         <div className="flex items-center lg:py-2 ">
           Build by&nbsp;
-          <Link href="/about" className="underline underline-offset-2">
+          <Link
+            href="/about"
+            className="underline decoration-primary dark:decoration-primaryDark underline-offset-4"
+          >
             Abubakar Farooq
           </Link>
         </div>
@@ -23,7 +26,7 @@ const Footer = () => {
           href={`https://wa.me/${phoneNumber}`}
           target="_blank"
           rel="noopener noreferrer"
-          className="underline underline-offset-2"
+          className="underline decoration-primary dark:decoration-primaryDark underline-offset-4"
         >
           Say hello
         </Link>
